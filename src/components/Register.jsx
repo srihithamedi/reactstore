@@ -6,9 +6,11 @@ export default function Register() {
   const [users, setUsers] = useState([]);
   const [user, setUser] = useState({});
   const handleSubmit = () => {
+    
     setUsers([...users, user]);
   };
   const handleDelete=(value)=>{
+    
     setUsers(users.filter((element)=>element!=value));
   }
   return (
